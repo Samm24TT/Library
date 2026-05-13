@@ -1,6 +1,4 @@
-import {
-  createBrowserRouter
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 // import Home from '../pages/Home'
 // import Home from "../pages/Home";
 // import Layout from "../pages/Layouts/Layout";
@@ -10,8 +8,8 @@ import {
 // import Home from "../pages/Home";
 import Home from "../pages/Home";
 import Layout from "../pages/Layouts/Layout";
-import Create from "../pages/Create"
-import Search from "../pages/Search"
+import Create from "../pages/Create";
+import Search from "../pages/Search";
 
 const router = createBrowserRouter([
   {
@@ -19,20 +17,19 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        index: true,  // Use index: true instead of path: ""
-        element: <Home />
+        index: true, // Use index: true instead of path: ""
+        element: <Home />,
       },
       {
-        path: "create",  // Remove leading "/" to make it relative
-        element: <Create />
+        path: "create", // Remove leading "/" to make it relative
+        element: <Create />,
       },
       {
-        path: "search",  // Remove leading "/" to make it relative
-        element: <Search />
-      }
-    ]
+        path: "search", // Remove leading "/" to make it relative
+        element: <Search />,
+      },
+    ],
   },
-
 ]);
 
 export default router;
